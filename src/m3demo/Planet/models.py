@@ -1,10 +1,9 @@
- # coding: utf-8
+# coding: utf-8
 from __future__ import unicode_literals
 from django.db import models
 from educommon.django.db.models import BaseModel
 
-
-class Jedi(BaseModel):
+class Planet(BaseModel):
 
     name = models.CharField(
         u'Name',
@@ -12,8 +11,8 @@ class Jedi(BaseModel):
     )
 
     class Meta:
-        verbose_name = u'Jedi'
-        verbose_name_plural = u'Jedies'
+        verbose_name = u'Planet'
+        verbose_name_plural = u'Planets'
 
 
     def __unicode__(self):
