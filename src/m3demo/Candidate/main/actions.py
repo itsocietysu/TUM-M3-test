@@ -18,6 +18,22 @@ class Pack(PackValidationMixin, ObjectPack):
             sortable=True,
             searchable=True,
         ),
+        dict(
+            data_index='age',
+            header=u'Age',
+        ),
+        dict(
+            data_index='email',
+            header=u'Email',
+        ),
+        dict(
+            data_index='planet',
+            header=u'Planet',
+        ),
+        dict(
+            data_index='jedi',
+            header=u'Jedi',
+        ),
     )
 
     list_sort_order = ('name',)
