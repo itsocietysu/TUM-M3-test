@@ -26,7 +26,8 @@ INSTALLED_APPS = [
     'm3demo.desktop',
     'm3demo.Jedi',
     'm3demo.Planet',
-    'm3demo.Candidate'
+    'm3demo.Candidate',
+    'm3demo.Test'
 ]
 
 MIDDLEWARE = [
