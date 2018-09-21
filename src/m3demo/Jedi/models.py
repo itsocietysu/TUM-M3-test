@@ -11,6 +11,13 @@ class Jedi(BaseModel):
         max_length=100,
     )
 
+    no_intersections_for = 'Planet'
+
+    planet = models.ForeignKey(
+        u'Planet.Planet',
+        verbose_name=u'Planet',
+    )
+
     class Meta:
         verbose_name = u'Jedi'
         verbose_name_plural = u'Jedies'
