@@ -1,0 +1,49 @@
+<WSConfig
+    xmlns="http://bars-open.ru/schema/wsfactory"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    ApiHandler="wsfactory.views.api_handler"
+    ApplicationClass="spyne.application.Application"
+    ServiceClass="spyne.service.ServiceBase"
+    WsgiClass="spyne.server.django.DjangoApplication">
+  <Protocols>
+    <!-- Протоколы -->
+    <Protocol
+        code="soap11"
+        direction="BOTH"
+        module="spyne.protocol.soap.soap11.Soap11"
+        name="SOAP 1.1" />
+  </Protocols>
+
+  <ApiRegistry>
+    <!-- API-методы -->
+    <Api
+        id="GetUnits"
+        code="GetUnits"
+        module="m3demo.unit.ws.unit_list.methods.GetUnits"
+        name="GetUnits" />
+  </ApiRegistry>
+
+  <Services>
+    <!-- Сервисы, они же услуги - наборы методов-API -->
+    <Service code="UnitList" name="Unit list">
+      <Api id="GetUnits" />
+    </Service>
+  </Services>
+
+  <SecurityProfile>
+    <Modules>
+      <!-- Описание модулей -->
+      <Module code="x509token" name="X509 Token Profile" path=""></Module>
+    </Modules>
+    <Security code="security" module="x509token" name="Default security profile">
+    </Security>
+  </SecurityProfile>
+
+  <Applications>
+    <!-- Реестр веб-сервисов (Соответствия протоколов-сервисов) -->
+    <Application name="UnitList" service="UnitList" url="^ws/unit-list$">
+      <InProtocol code="soap11"></InProtocol>
+      <OutProtocol code="soap11"></OutProtocol>
+    </Application>
+  </Applications>
+</WSConfig>

@@ -1,0 +1,58 @@
+html {
+    background-image: none !important;
+}
+
+body {
+    background-image: none !important;
+    background-color: #cccccc;
+}
+/* --------------------------------------------------------------------------*/
+/* Иконки на рабочем столе */
+
+.base-desktop-image {
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 65px;
+    height: 65px;
+    display: block;
+}
+
+#x-shortcuts td div {
+  color: #222222;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  font-size:14px;
+}
+#x-shortcuts td {
+  display: block;
+  float: left;
+  font: 10px tahoma,arial,verdana,sans-serif;
+  margin: 15px 0 0 15px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}
+#x-shortcuts td a {
+  color: #222222;
+  display: block;
+  text-decoration: none;
+  width: 100px;
+}
+/* --------------------------------------------------------------------------*/
+/* CSS-классы для иконок */
+
+.units {
+    background-image: url(../images/icons/units.png);
+}
+.persons {
+    background-image: url(../images/icons/persons.png);
+}
+.jobs {
+    background-image: url(../images/icons/jobs.png);
+}
+.employees {
+    background-image: url(../images/icons/employees.png);
+}
+/* --------------------------------------------------------------------------*/
