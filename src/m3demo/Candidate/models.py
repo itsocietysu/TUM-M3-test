@@ -27,7 +27,7 @@ class Candidate(BaseModel):
         max_length=100)
 
     jedi = models.ForeignKey(
-        'jedi.Jedi',
+        'Jedi.Jedi',
         verbose_name=u'Jedi',
         default=None,
         null=True,
