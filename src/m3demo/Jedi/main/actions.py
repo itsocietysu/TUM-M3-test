@@ -18,6 +18,10 @@ class Pack(PackValidationMixin, ObjectPack):
             sortable=True,
             searchable=True,
         ),
+        dict(
+            data_index='planet',
+            header=u'Planet',
+        ),
     )
 
     list_sort_order = ('name',)
