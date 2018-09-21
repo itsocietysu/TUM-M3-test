@@ -12,7 +12,7 @@ class EditWindow(ModelEditWindow):
 
     _field_list = (
         'name',
-        'planet_id'
+        'planet'
     )
 
     field_fabric_params = dict(
