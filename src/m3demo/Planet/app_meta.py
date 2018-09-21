@@ -5,8 +5,7 @@ from .main.actions import Pack
 
 
 def register_actions():
-    pass
-    # u"""Регистрирует наборы действий приложения в M3."""
-    # main_controller.extend_packs((
-    #     Pack(),
-    # ))
+    u"""Регистрирует наборы действий приложения в M3."""
+    main_controller.extend_packs((
+        Pack(),
+    ))

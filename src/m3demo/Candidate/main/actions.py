@@ -26,7 +26,7 @@ class Pack(PackValidationMixin, ObjectPack):
 
     def extend_desktop(self, menu):
         u"""Возвращает ярлык для рабочего стола."""
-        return menu.Item(self.title, self, icon='candidate')
+        return menu.Item(self.title, self, icon='candidates')
 
     def extend_menu(self, menu):
         u"""Возвращает ярлык для меню "Пуск"."""
