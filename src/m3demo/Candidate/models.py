@@ -11,7 +11,7 @@ class Candidate(BaseModel):
     )
 
     planet = models.ForeignKey(
-        'planet.Planet',
+        'Planet.Planet',
         verbose_name=u'Planet',
         null=True,
         on_delete=models.SET_NULL,
