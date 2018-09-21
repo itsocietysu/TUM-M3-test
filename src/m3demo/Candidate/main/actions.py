@@ -2,6 +2,7 @@
 from educommon.m3 import PackValidationMixin
 from objectpack.actions import ObjectPack
 
+from m3demo.planet.models import Planet
 from ..models import Candidate
 from .ui import EditWindow
 
@@ -49,3 +50,16 @@ class Pack(PackValidationMixin, ObjectPack):
         return menu.administry(
             menu.Item(self.title, self),
         )
+
+
+class PlanetsPack(ObjectPack):
+
+    model = Planet
+    _is_primary_for_model = False
+
+    columns = (
+        dict(
+            data_index='name',
+        ),
+    )
+    column_name_on_select = 'name'
