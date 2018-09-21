@@ -2,7 +2,7 @@
 from educommon.m3 import PackValidationMixin
 from objectpack.actions import ObjectPack
 
-from m3demo.planet.models import Planet
+from m3demo.Planet.models import Planet
 from ..models import Candidate
 from .ui import EditWindow
 
