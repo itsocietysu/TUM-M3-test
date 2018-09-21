@@ -1,6 +1,7 @@
 # coding: utf-8
 from objectpack.ui import ModelEditWindow
 
+from m3demo.core.utils.misc import ModelRegister
 from m3demo.core.utils.ui import reorder_controls
 from m3demo.core.controllers import core_observer
 
