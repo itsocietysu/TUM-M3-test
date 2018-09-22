@@ -48,6 +48,15 @@ class Pack(PackValidationMixin, ObjectPack):
         return menu.administry(
             menu.Item(self.title, self),
         )
+    
+    def __init__(self):
+        super(Pack, self).__init__()
+
+        self.planets_pack = PlanetsPack()
+
+        self.subpacks.extend((
+            self.planets_pack,
+        ))
 
 
 class PlanetsPack(ObjectPack):
