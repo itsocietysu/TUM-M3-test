@@ -28,12 +28,10 @@ class Pack(PackValidationMixin, ObjectPack):
             header=u'Email',
         ),
         dict(
-            data_index='planet',
+            data_index='planet.name',
             header=u'Planet',
-        ),
-        dict(
-            data_index='jedi',
-            header=u'Jedi',
+            sortable=True,
+            width=1,
         ),
     )
 
