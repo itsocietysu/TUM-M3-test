@@ -28,7 +28,7 @@ class Pack(PackValidationMixin, ObjectPack):
             header=u'Email',
         ),
         dict(
-            data_index='planet.name',
+            data_index='planet',
             header=u'Planet',
         ),
         dict(
